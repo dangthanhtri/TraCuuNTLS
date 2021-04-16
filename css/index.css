@@ -1,0 +1,427 @@
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, "Lato", sans-serif;
+}
+
+/* TOP BAR */
+
+#logo img {
+  width: 200px;
+  float: left;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #a7d8a9;
+  padding: 3px 3px 3px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.icon {
+  float: right;
+  display: none;
+  padding-top: 12px;
+  margin-right: 10px;
+  font-size: 38px;
+  color: rgb(0, 114, 27);
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: rgb(0, 114, 27);
+}
+
+.header a.active {
+  background-color:rgb(0, 114, 27);
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-top: 5px;
+  margin-right: 8px;
+}
+
+/* MÀN HÌNH CHÍNH */
+
+.main{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.main-left {
+  float: left;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+
+.main-right {
+  float: right;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.main-right-top {
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00721b;
+  border-radius: 10px;
+  height: 30vh;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+
+.main-right-bottom {
+  background-color: #f1f1f1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00721b;
+  border-radius: 10px;
+  height: 30vh;
+  margin-top: 3vh;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.main-content img {
+  width: 90%;
+  margin: 20px;
+}
+/* BOTTOM BAR */
+
+.bottombar {
+  overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.bottombar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottombar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bottombar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* SIDEBAR */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .header a {
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    display: none;
+  }
+
+  .header a.icon{
+    display: block;
+  }
+
+  .main-left {
+    width: 100%;
+    float: none;
+  }
+
+  .main-right {
+    width: 100%;
+    float: none;
+  }
+
+}
+
+
+
+/* TRA CỨU */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: -webkit-fill-available;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10px 8px 10px 8px;
+}
+
+/* The Modal (background) */
+.searchscr {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.searchscr-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/* Hướng Dẫn*/
+.hdScr {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0);
+}
+
+.hdScr-content {
+  position: relative;
+  top: 60px;
+  width: 90%;
+  margin: 10px;
+  color: #ccc;
+}
+
+.hdScr .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.hdScr .closebtn:hover {
+  color: #ccc;
+}
+
+/* Giới Thiệu*/
+.gtScr {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #ffffff;
+}
+
+.gtScr-content {
+  position: relative;
+  top: 60px;
+  margin: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.gtScr-content p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+.gtScr .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+
+.gtScr .closebtn:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+/* LOADER SPIN WHEN LOADING PAGE */
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

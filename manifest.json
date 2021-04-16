@@ -1,0 +1,13 @@
+{
+  "short_name": "Tra Cứu Demo",
+  "name": "Ứng dụng tra cứu huyện Hóc Môn",
+  "icons": [
+    {
+      "src": "huy_hieu_doan.png",
+      "sizes": "192x192",
+      "type": "img/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone"
+}
