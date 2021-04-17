@@ -11,35 +11,27 @@ $(document).ready(function () {
             //CONSTRUCTION OF ROWS HAVING
             // DATA FROM JSON OBJECT
             student += '<tr>';
-            student += '<td>' + 
-                value.so-mo + '</td>';
 
             student += '<td>' + 
-                value.ma-so + '</td>';
-    
-            student += '<td>' + 
-                value.lo + '</td>';
+                value.maso + '</td>';
 
             student += '<td>' + 
-                value.ho-ten + '</td>';
+                value.hoten + '</td>';
             
             student += '<td>' + 
-                value.sinh-nam + '</td>';
+                value.sinhnam + '</td>';
             
             student += '<td>' + 
-                value.nguyen-quan + '</td>';
-          
-            student += '<td>' + 
-                value.cap-bac + '</td>';
+                value.nguyenquan + '</td>';
             
             student += '<td>' + 
-                value.chuc-vu + '</td>';
+                value.chucvu + '</td>';
 
             student += '<td>' + 
-                value.don-vi + '</td>';
+                value.donvi + '</td>';
             
             student += '<td>' + 
-                value.hy-sinh + '</td>';
+                value.hysinh + '</td>';
 
             student += '</tr>';
         });

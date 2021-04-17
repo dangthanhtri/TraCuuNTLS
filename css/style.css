@@ -113,6 +113,7 @@ body{
     margin: 20px;
   }
 
+  
   @media screen and (max-width: 500px) { 
     .mapScr-left {
       width: 100%;
@@ -150,12 +151,12 @@ body{
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
-    font-size: 18px;
+    font-size: 8px;
     }
     
     #myTable th, #myTable td {
     text-align: left;
-    padding: 12px;
+    padding: 7px;
     }
     
     #myTable tr {
