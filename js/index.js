@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // FETCHING DATA FROM JSON FILE
-    $.getJSON("https://harrisstudio.gq/testjsonfile/danh-sach-hoc-mon.json", 
+    $.getJSON("https://dangthanhtri.github.io/TraCuuNTLS/danh-sach-hoc-mon.json", 
             function (data) {
         var student = '';
 
