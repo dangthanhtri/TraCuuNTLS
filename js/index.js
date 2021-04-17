@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // FETCHING DATA FROM JSON FILE
-    $.getJSON("https://harrisstudio.gq/testjsonfile/gfgdetails.json", 
+    $.getJSON("https://harrisstudio.gq/testjsonfile/danh-sach-hoc-mon.json", 
             function (data) {
         var student = '';
 
@@ -12,16 +12,34 @@ $(document).ready(function () {
             // DATA FROM JSON OBJECT
             student += '<tr>';
             student += '<td>' + 
-                value.GFGUserName + '</td>';
+                value.so-mo + '</td>';
 
             student += '<td>' + 
-                value.NoOfProblems + '</td>';
+                value.ma-so + '</td>';
     
-    student += '<td>' + 
-                value.TotalScore + '</td>';
+            student += '<td>' + 
+                value.lo + '</td>';
 
             student += '<td>' + 
-                value.Articles + '</td>';
+                value.ho-ten + '</td>';
+            
+            student += '<td>' + 
+                value.sinh-nam + '</td>';
+            
+            student += '<td>' + 
+                value.nguyen-quan + '</td>';
+          
+            student += '<td>' + 
+                value.cap-bac + '</td>';
+            
+            student += '<td>' + 
+                value.chuc-vu + '</td>';
+
+            student += '<td>' + 
+                value.don-vi + '</td>';
+            
+            student += '<td>' + 
+                value.hy-sinh + '</td>';
 
             student += '</tr>';
         });
