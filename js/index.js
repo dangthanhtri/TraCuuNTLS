@@ -71,15 +71,15 @@ for (var i = 0; i < cells.length; i++) {
         //alert(msg);
         console.log(res);
         if (res == "LÔ A") {
-            show('img/map/2.png','img/position/pA.png');
+            show('img/map/2.PNG','img/position/pa.PNG');
         } else if (res == "LÔ B") {
-            show('img/map/5.png','img/position/B.png');
+            show('img/map/5.PNG','img/position/pb.PNG');
         } else if (res == "LÔ C") {
-            show('img/map/4.png','img/position/pC.png');
+            show('img/map/4.PNG','img/position/pc.PNG');
         } else if (res == "LÔ D") {
-            show('img/map/3.png','img/position/pD.png');
+            show('img/map/3.PNG','img/position/pd.PNG');
         } else {
-            show('img/map/1.png','');
+            show('img/map/1.PNG','');
         }
 
         $('#search-to-a').html(rowSelected.cells[0].innerHTML);
