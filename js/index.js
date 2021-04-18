@@ -63,11 +63,24 @@ for (var i = 0; i < cells.length; i++) {
         var rowId = this.parentNode.rowIndex;
         var rowSelected = table.getElementsByTagName('tr')[rowId];
         rowSelected.className += " selected";
-
-        msg = 'The ID of the company is: ' + rowSelected.cells[0].innerHTML;
-        msg += '\nThe cell value is: ' + this.innerHTML;  
+        var str = rowSelected.cells[0].innerHTML;
+        var Str = str.slice(8, 12);
+        var res = Str.toLocaleUpperCase();
+        //msg = 'The ID of the company is: ' + rowSelected.cells[0].innerHTML;
+        //msg += '\nThe cell value is: ' + this.innerHTML;  
         //alert(msg);
-        console.log(msg);
+        console.log(res);
+        if (res == "LÔ A") {
+            show('img/map/2.png','img/position/pA.png');
+        } else if (res == "LÔ B") {
+            show('img/map/5.png','img/position/B.png');
+        } else if (res == "LÔ C") {
+            show('img/map/4.png','img/position/pC.png');
+        } else if (res == "LÔ D") {
+            show('img/map/3.png','img/position/pD.png');
+        } else {
+            show('img/map/1.png','');
+        }
 
         $('#search-to-a').html(rowSelected.cells[0].innerHTML);
         $('#search-to-b').html(rowSelected.cells[1].innerHTML); 
@@ -84,17 +97,22 @@ $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
     $('area').on('focus', function(e) {
       e.preventDefault();
-      $('.mapScr-right-top p').html($(this).attr('title'));   
+      //$('.mapScr-right-top p').html($(this).attr('title'));
     });
   
     $(document).on('click', function(e) {
       e.preventDefault();
       if ( $(e.target).closest('area').length === 0 ) {
-        $('.mapScr-right-top p').html('Chọn một địa điểm trên bản đồ!'); 
+        //$('.mapScr-right-top p').html('Chọn một địa điểm trên bản đồ!'); 
+        //show('img/map/1.png');
       }  
     });
-    
-  });
+  })
+
+function show(filename, filename2){
+  jQuery('#maps').attr("src",filename);
+  jQuery('#smap').attr("src",filename2);
+};
 
 // INTRO SCREEN
 

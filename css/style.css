@@ -9,7 +9,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(#eaf8ff, #4193ff);
+    background-color: #fff;
 }
 
 .header {
@@ -30,35 +30,6 @@ body{
   width: 40vw;
 }
 
-.header .search-container {
-  float: right;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.header input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.header .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.header .search-container button:hover {
-  background: #ccc;
-}
 
 
 #mapScr {
@@ -68,15 +39,11 @@ body{
     position: relative;
 }
   .mapScr-left {
-    float: left;
-    width: 70%;
     height: 100%;
     text-align: center;
   }
   
   .mapScr-right {
-    float: right;
-    width: 30%;
     height: 100%;
     text-align: center;
     padding-top: 3vh;
@@ -84,12 +51,11 @@ body{
   }
   
   .mapScr-right-top {
-    background-color: #f1f1f112;
+    background-color: #d9d9d9;
     border-style: solid;
     border-width: 2px;
-    border-color: #00721b;
+    border-color: #1477fa;
     border-radius: 10px;
-    height: 30vh;
     margin-top: 3%;
     margin-left: 3%;
     margin-right: 3%;
@@ -100,7 +66,7 @@ body{
     background-color: #f1f1f112;
     border-style: solid;
     border-width: 2px;
-    border-color: #00721b;
+    border-color: #1477fa;
     border-radius: 10px;
     height: 30vh;
     margin-top: 3vh;
@@ -108,9 +74,14 @@ body{
     margin-right: 3%;
   }
   
-  .mapScr img {
+  #maps {
     width: 90%;
     margin: 20px;
+    border-radius: 15px;
+  }
+
+  #smap {
+    width: 95%;
   }
 
   

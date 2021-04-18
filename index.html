@@ -5,57 +5,38 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<link rel="apple-touch-icon" sizes="128x128" href="img/icons/icon_goc.png" />
+<link rel="apple-touch-icon" sizes="128x128" href="img/icons/apple-touch-icon.png" />
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="icon" href="img/icons/icon_goc.png"/>
+<link rel="icon" href="img/icons/favicon.png"/>
 </head>
 
 <body>
   <div class="header">
     <img id="" src="img/banner.png" >
-    <div class="search-container">
-      <form action="/">
-        <input type="text" placeholder="Tra cứu vị trí các khu..." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
   </div>
   <div id="mapScr" class="mapScr">
     <div class="mapScr-left">
-      <img id="maps" src="img/map-web-3.png" usemap="#image-map">
+      <img id="maps" src="img/map/1.PNG" usemap="#image-map">
       <map name="image-map">
-        <area target="" alt="Nhà nghỉ chân khách, WC" title="Nhà nghỉ chân khách, WC" href="Test" coords="2641,529,2596,206,2757,181,2803,505" shape="poly">
-        <area target="" alt="Nhà quân trang, tiếp khách, WC" title="Nhà quân trang, tiếp khách, WC" href="" coords="2633,1177,2795,1204,2747,1530,2582,1500" shape="poly">
-        <area target="" alt="Lối vào cổng chính" title="Lối vào cổng chính" href="" coords="2747,745,2852,748,2846,958,2744,964" shape="poly">
-        <area target="" alt="Hồ sen" title="Hồ sen" href="" coords="2310,197,2458,197,2455,575,2310,578" shape="poly">
-        <area target="" alt="Hồ sen" title="Hồ sen" href="" coords="2304,1128,2450,1131,2447,1500,2299,1500" shape="poly">
-        <area target="" alt="Khu D" title="Khu D" href="" coords="1816,254,1811,645,2285,645,2285,192" shape="poly">
-        <area target="" alt="Khu  A" title="Khu  A" href="" coords="1811,1055,2275,1063,2272,1506,1811,1433" shape="poly">
-        <area target="" alt="Khu C" title="Khu C" href="" coords="1730,462,1382,459,1382,564,1404,575,1430,605,1436,634,1412,661,1382,680,1347,675,1325,656,1312,634,1285,629,1282,810,1530,810,1530,651,1724,645" shape="poly">
-        <area target="" alt="Khu B" title="Khu B" href="" coords="1282,872,1525,872,1522,1036,1706,1044,1697,1228,1379,1220,1377,1120,1406,1109,1428,1077,1428,1053,1412,1017,1379,1001,1344,1007,1315,1034,1306,1053,1282,1050" shape="poly">
-        <area target="" alt="Sân hành lễ" title="Sân hành lễ" href="" coords="1584,653,1571,1020,2407,1031,2409,648" shape="poly">
-        <area target="" alt="Lô đất dự trữ F" title="Lô đất dự trữ F" href="" coords="1134,516,1131,386,1155,343,1714,259,1716,435,1368,440,1368,559,1333,575,1315,613,1279,621,1269,804,1091,804,1056,783,1056,616,1061,518" shape="poly">
-        <area target="" alt="Lô đất dự trữ E" title="Lô đất dự trữ E" href="" coords="1271,869,1269,1066,1309,1066,1315,1088,1328,1104,1363,1120,1358,1244,1703,1249,1700,1411,1155,1328,1131,1293,1131,1155,1048,1150,1056,896,1088,866" shape="poly">
-        <area target="" alt="Lô đất dự trữ H" title="Lô đất dự trữ H" href="" coords="880,556,878,408,295,494,295,764,950,772,953,556" shape="poly">
-        <area target="" alt="Lô đất dự trữ G" title="Lô đất dự trữ G" href="" coords="292,896,948,904,948,1131,870,1131,872,1249,292,1160" shape="poly">
-        <area target="" alt="Lối thoát hiểm" title="Lối thoát hiểm" href="" coords="880,322,1180,281,1169,230,875,270" shape="poly">
-        <area target="" alt="Nhà nghỉ chân" title="Nhà nghỉ chân" href="" coords="972,1223,1066,1314" shape="rect">
-        <area target="" alt="Nhà nghỉ chân" title="Nhà nghỉ chân" href="" coords="980,365,1077,459" shape="rect">
-        <area target="" alt="Nhà WC" title="Nhà WC" href="" coords="104,1123,193,1214" shape="rect">
-        <area target="" alt="Bãi đỗ xe ô tô" title="Bãi đỗ xe ô tô" href="" coords="2814,605,2631,632,2617,548,2806,524" shape="poly">
-        <area target="" alt="Bãi đỗ xe máy" title="Bãi đỗ xe máy" href="" coords="2803,146,2922,127,2976,206,2997,243,2995,268,2954,508,2857,529,2828,334" shape="poly">
-        <area target="" alt="Bãi đỗ xe máy nhân viên" title="Bãi đỗ xe máy nhân viên" href="" coords="2819,1372,2792,1362,2771,1483,2801,1494" shape="poly">
-        <area target="" alt="Bãi đỗ xe ô tô" title="Bãi đỗ xe ô tô" href="" coords="2628,1070,2782,1095,2771,1173,2612,1146" shape="poly">
-        <area target="" alt="Lối vào cổng phụ" title="Lối vào cổng phụ" href="" coords="2830,1513,2757,1556,2733,1696,2798,1707" shape="poly">
-        <area target="" alt="Cột cờ" title="Cột cờ" href="" coords="1773,848,154" shape="circle">
+        <area target="" onclick="show('img/map/2.png')" alt="Khu A" title="Khu A" href="" coords="5,462,248,647" shape="rect">
+        <area target="" onclick="show('img/map/3.png')" alt="Khu D" title="Khu D" href="" coords="471,463,713,645" shape="rect">
+        <area target="" onclick="show('img/map/8.png')" alt="Hồ sen bên trái" title="Hồ sen bên trái" href="" coords="4,648,247,725" shape="rect">
+        <area target="" onclick="show('img/map/7.png')" alt="Hồ sen bên phải" title="Hồ sen bên phải" href="" coords="471,646,713,724" shape="rect">
+        <area target="" onclick="show('img/map/11.png')" alt="Cổng chính" title="Cổng chính" href="" coords="297,863,421,913" shape="rect">
+        <area target="" onclick="show('img/map/9.png')" alt="Nhà quân trang, tiếp khách, WC" title="Nhà quân trang, tiếp khách, WC" href="" coords="3,775,237,902" shape="rect">
+        <area target="" onclick="show('img/map/10.png')" alt="Nhà nghỉ chân khách, WC" title="Nhà nghỉ chân khách, WC" href="" coords="481,782,713,903" shape="rect">
+        <area target="" onclick="show('img/map/6.png')" alt="Sân hành lễ" title="Sân hành lễ" href="" coords="248,393,471,725" shape="rect">
+        <area target="" onclick="show('img/map/6.png')" alt="Cột cờ" title="Cột cờ" href="" coords="357,460,51" shape="circle">
+        <area target="" onclick="show('img/map/5.png')" alt="Khu B" title="Khu B" href="" coords="255,230,340,230,339,391,247,391,249,455,152,453,153,332,218,333,218,343,228,343,227,353,237,355,273,353,275,345,283,343,283,311,274,311,274,303,255,302" shape="poly">
+        <area target="" onclick="show('img/map/4.png')" alt="Khu C" title="Khu C" href="" coords="377,230,461,230,461,302,441,301,441,314,433,311,432,342,442,344,444,353,491,352,491,345,501,343,501,334,567,332,566,453,472,453,471,390,377,390" shape="poly">
     </map>
     </div>
     <div class="mapScr-right">
       <div class="mapScr-right-top">
-        <p style="font-size: 14px;">Chọn một địa điểm trên bản đồ!</p>
+        <img id="smap" src="">
       </div>
       <div class="mapScr-right-bottom">
         <p id="search-to-a">A</p>
