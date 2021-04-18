@@ -71,13 +71,13 @@ for (var i = 0; i < cells.length; i++) {
         //alert(msg);
         console.log(res);
         if (res == "LÔ A") {
-            show('img/map/2.PNG','img/position/pa.PNG');
+            show('img/map/2.PNG','img/position/pA.PNG');
         } else if (res == "LÔ B") {
-            show('img/map/5.PNG','img/position/pb.PNG');
+            show('img/map/5.PNG','img/position/pB.PNG');
         } else if (res == "LÔ C") {
-            show('img/map/4.PNG','img/position/pc.PNG');
+            show('img/map/4.PNG','img/position/pC.PNG');
         } else if (res == "LÔ D") {
-            show('img/map/3.PNG','img/position/pd.PNG');
+            show('img/map/3.PNG','img/position/pD.PNG');
         } else {
             show('img/map/1.PNG','');
         }
