@@ -97,6 +97,7 @@ $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
     $('area').on('focus', function(e) {
       e.preventDefault();
+      responsiveVoice.speak($(this).attr('title'),'Vietnamese Female');
       //$('.mapScr-right-top p').html($(this).attr('title'));
     });
   
