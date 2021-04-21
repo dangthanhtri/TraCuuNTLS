@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     // FETCHING DATA FROM JSON FILE
     $.getJSON("http://tracuunghiatranglietsi.tk/danh-sach-hoc-mon.json", 
             function (data) {
@@ -81,13 +80,14 @@ for (var i = 0; i < cells.length; i++) {
         } else {
             show('img/map/1.PNG','');
         }
-
+        
         $('#search-to-a').html(rowSelected.cells[0].innerHTML);
         $('#search-to-b').html(rowSelected.cells[1].innerHTML); 
         $('#search-to-c').html(rowSelected.cells[2].innerHTML); 
         $('#search-to-d').html(rowSelected.cells[3].innerHTML); 
-        
         openMap();
+        document.getElementById("mapScrPic").style.display = "block";
+        $('#ex1').zoom();
     }
 }
 }

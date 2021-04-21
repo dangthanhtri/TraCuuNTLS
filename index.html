@@ -34,16 +34,24 @@
         <area target="" onclick="show('img/map/4.PNG')" alt="Khu C" title="Khu C" href="" coords="377,230,461,230,461,302,441,301,441,314,433,311,432,342,442,344,444,353,491,352,491,345,501,343,501,334,567,332,566,453,472,453,471,390,377,390" shape="poly">
     </map>
     </div>
-    <div class="mapScr-right">
-      <div class="mapScr-right-top">
-        <img id="smap" src="">
+    <div  class="mapScr-right">
+      <div id="mapScrPic"s class="mapScr-right-top">
+        <span class='zoom' id='ex1'>
+          <img id="smap"/>
+        </span>
       </div>
+
       <div class="mapScr-right-bottom">
-        <p id="search-to-a">A</p>
-        <p id="search-to-b">B</p> 
-        <p id="search-to-c">C</p> 
-        <p id="search-to-d">D</p> 
+        <div class="infoHeader">
+          <p>THÔNG TIN LIỆT SĨ</p>
+        </div>
+        
+        <p id="search-to-a"></p>
+        <p id="search-to-b"></p> 
+        <p id="search-to-c"></p> 
+        <p id="search-to-d"></p> 
       </div>
+
     </div>   
   </div>
 
@@ -101,5 +109,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.rwdImageMaps.min.js"></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=SZxVz5Ma"></script>
+  <script src='js/jquery.zoom.js'></script>
 </body>
 </html>
