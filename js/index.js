@@ -81,10 +81,13 @@ for (var i = 0; i < cells.length; i++) {
             show('img/map/1.PNG','');
         }
         
-        $('#search-to-a').html(rowSelected.cells[0].innerHTML);
-        $('#search-to-b').html(rowSelected.cells[1].innerHTML); 
-        $('#search-to-c').html(rowSelected.cells[2].innerHTML); 
-        $('#search-to-d').html(rowSelected.cells[3].innerHTML); 
+        $('#search-to-a').html("Vị trí mộ: " + rowSelected.cells[0].innerHTML);
+        $('#search-to-b').html("Đồng chí: " + rowSelected.cells[1].innerHTML); 
+        $('#search-to-c').html("Năm sinh: " + rowSelected.cells[2].innerHTML); 
+        $('#search-to-d').html("Nguyên quán: " + rowSelected.cells[3].innerHTML); 
+        $('#search-to-e').html("Chức vụ: " + rowSelected.cells[4].innerHTML);
+        $('#search-to-f').html("Đơn vị: " + rowSelected.cells[5].innerHTML);
+        $('#search-to-g').html("Hy sinh: " + rowSelected.cells[6].innerHTML);
         openMap();
         document.getElementById("mapScrPic").style.display = "block";
         $('#ex1').zoom();

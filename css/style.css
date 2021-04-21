@@ -55,7 +55,7 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: #1477fa;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-bottom: 3%;
     margin-left: 3%;
     margin-right: 3%;
@@ -70,14 +70,14 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: #1477fa;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 3%;
     margin-right: 3%;
   }
   
   #maps {
-    width: 90%;
-    margin: 20px;
+    width: 95%;
+    margin-top: 15px;
     border-radius: 15px;
   }
 
