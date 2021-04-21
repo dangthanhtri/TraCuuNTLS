@@ -68,7 +68,7 @@ for (var i = 0; i < cells.length; i++) {
         //msg = 'The ID of the company is: ' + rowSelected.cells[0].innerHTML;
         //msg += '\nThe cell value is: ' + this.innerHTML;  
         //alert(msg);
-        console.log(res);
+        //console.log(res);
         if (res == "LÔ A") {
             show('img/map/2.PNG','img/position/pA.PNG');
         } else if (res == "LÔ B") {
@@ -80,7 +80,6 @@ for (var i = 0; i < cells.length; i++) {
         } else {
             show('img/map/1.PNG','');
         }
-        
         $('#search-to-a').html("Vị trí mộ: " + rowSelected.cells[0].innerHTML);
         $('#search-to-b').html("Đồng chí: " + rowSelected.cells[1].innerHTML); 
         $('#search-to-c').html("Năm sinh: " + rowSelected.cells[2].innerHTML); 
@@ -88,9 +87,12 @@ for (var i = 0; i < cells.length; i++) {
         $('#search-to-e').html("Chức vụ: " + rowSelected.cells[4].innerHTML);
         $('#search-to-f').html("Đơn vị: " + rowSelected.cells[5].innerHTML);
         $('#search-to-g').html("Hy sinh: " + rowSelected.cells[6].innerHTML);
+        var readPossition = "Hàng " + str.slice(1, 3) + " cột " + str.slice(5, 7) + " Khu " + str.slice(11, 12);
+        responsiveVoice.speak(readPossition,'Vietnamese Female');
+        //console.log(readPossition);
         openMap();
-        document.getElementById("mapScrPic").style.display = "block";
-        $('#ex1').zoom();
+        //document.getElementById("mapScrPic").style.display = "block";
+        //$('#ex1').zoom();
     }
 }
 }
@@ -109,13 +111,16 @@ $(document).ready(function(e) {
       if ( $(e.target).closest('area').length === 0 ) {
         //$('.mapScr-right-top p').html('Chọn một địa điểm trên bản đồ!'); 
         //show('img/map/1.png');
+        //document.getElementById("mapScrPic").style.display = "none";
       }  
     });
   })
 
 function show(filename, filename2){
+    document.getElementById("mapScrPic").style.display = "block";
   jQuery('#maps').attr("src",filename);
   jQuery('#smap').attr("src",filename2);
+  $('#ex1').zoom();
 };
 
 // INTRO SCREEN
