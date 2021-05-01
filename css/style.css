@@ -155,10 +155,44 @@ body{
     position: relative;
 }
 
+
 #introScr p {
     font-size: 25px;
     text-align: justify;
     padding: 20px;
+}
+
+#ggmapScr {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  padding-bottom: 90px;
+  width: 100%;
+  position: relative;
+}
+.ggmapScr-nav {
+  overflow: hidden;
+  background-color: #1477fa;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:100%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.ggmapImg {
+  width: 100vw;
 }
 
 #slideshow { 

@@ -88,7 +88,7 @@ for (var i = 0; i < cells.length; i++) {
         $('#search-to-f').html("Đơn vị: " + rowSelected.cells[5].innerHTML);
         $('#search-to-g').html("Hy sinh: " + rowSelected.cells[6].innerHTML);
         var readPossition = "Hàng " + str.slice(1, 3) + " cột " + str.slice(5, 7) + " Khu " + str.slice(11, 12);
-        responsiveVoice.speak(readPossition,'Vietnamese Female');
+        responsiveVoice.speak(readPossition,'Vietnamese Female', {rate: 0.75});
         //console.log(readPossition);
         openMap();
         //document.getElementById("mapScrPic").style.display = "block";
@@ -102,7 +102,7 @@ $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
     $('area').on('focus', function(e) {
       e.preventDefault();
-      responsiveVoice.speak($(this).attr('title'),'Vietnamese Female');
+      responsiveVoice.speak($(this).attr('title'),'Vietnamese Female', {rate: 0.9});
       //$('.mapScr-right-top p').html($(this).attr('title'));
     });
   
@@ -129,24 +129,35 @@ function openIntro() {
     document.getElementById("introScr").style.display = "block";
     document.getElementById("searchScr").style.display = "none";
     document.getElementById("mapScr").style.display = "none";
+    document.getElementById("ggmapScr").style.display = "none";
 }
 
 function openMap() {
     document.getElementById("introScr").style.display = "none";
     document.getElementById("searchScr").style.display = "none";
     document.getElementById("mapScr").style.display = "block";
+    document.getElementById("ggmapScr").style.display = "none";
 }
 
 function openSearch() {
     document.getElementById("introScr").style.display = "none";
     document.getElementById("searchScr").style.display = "block";
     document.getElementById("mapScr").style.display = "none";
+    document.getElementById("ggmapScr").style.display = "none";
 }
   
 function closeSearch() {
     document.getElementById("mapScr").style.display = "block";
     document.getElementById("searchScr").style.display = "none";
 }
+
+function openGGMap() {
+    document.getElementById("introScr").style.display = "none";
+    document.getElementById("searchScr").style.display = "none";
+    document.getElementById("mapScr").style.display = "none";
+    document.getElementById("ggmapScr").style.display = "block";
+}
+
 
 $("#slideshow > div:gt(0)").hide();
 setInterval(function() { 
