@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // FETCHING DATA FROM JSON FILE
-    $.getJSON("https://tracuunghiatranglietsi.tk/danh-sach-hoc-mon.json",
+    $.getJSON("http://tracuunghiatranglietsihocmon.com/danh-sach-hoc-mon.json",
         function (data) {
             var student = '';
 
